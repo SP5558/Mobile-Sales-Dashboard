@@ -1,0 +1,93 @@
+***** 📱 Mobile Sales Dashboard – Power BI Project *****
+
+📌 Project Overview
+The **Mobile Sales Dashboard** is an interactive Power BI project designed to analyze mobile phone sales performance across different brands, cities, payment methods, and time periods. 
+The dashboard provides key business insights through dynamic visualizations, KPIs, and filtering capabilities, enabling data-driven decision-making.
+
+🎯 Objectives
+* Analyze overall mobile sales performance.
+* Track sales trends across months and weekdays.
+* Compare sales among different mobile brands.
+* Evaluate customer rating distribution.
+* Understand payment method preferences.
+* Identify top-performing cities and regions.
+
+🛠️ Tools & Technologies
+* **Power BI Desktop**
+* **Power Query**
+* **DAX (Data Analysis Expressions)**
+* **Data Modeling**
+* **Microsoft Excel (Data Source)**
+
+📊 Dashboard Features
+🔹 KPI Cards
+  * Total Sales
+  * Total Quantity Sold
+  * Total Transactions
+  * Average Price
+🔹 Interactive Filters (Slicers)
+  * Brand
+  * Mobile Model
+  * Payment Method
+  * Month Selection
+  * Clear All Filters Button
+🔹 Visualizations
+  * Total Transactions by Payment Method (Pie Chart)
+  * Total Quantity by City (Map Visual)
+  * Total Sales by Mobile Model (Bar Chart)
+  * Customer Ratings Distribution (Funnel Chart)
+  * Total Sales by Day Name (Line Chart)
+  * Total Quantity by Month (Line Chart)
+  * Brand-wise Sales & Transactions (Table)
+
+📈 Key Insights
+
+* Achieved analysis of **₹769M+ Total Sales**.
+* Identified top-selling mobile models.
+* Evaluated customer rating trends.
+* Analyzed sales performance across cities.
+* Compared payment method usage.
+* Tracked monthly and daily sales patterns.
+
+🧮 DAX Measures Used
+DAX :
+Total Sales = SUM(Sales[Total_Sales])
+Total Quantity = SUM(Sales[Quantity])
+Total Transactions = COUNT(Sales[Transaction_ID])
+Average Price = DIVIDE([Total Sales], [Total Quantity])
+
+🗂️ Data Model
+  The project follows a structured data model connecting:
+* Sales Data
+* Product Information
+* Customer Ratings
+* Payment Details
+* Geographic Data
+
+🚀 Skills Demonstrated
+* Data Cleaning & Transformation
+* Data Modeling
+* DAX Calculations
+* Dashboard Development
+* Interactive Reporting
+* Business Intelligence
+* Data Visualization
+* Analytical Thinking
+
+📷 Dashboard Preview
+<img width="100%" alt="Mobile Sales Dashboard" src="dashboard_screenshot.png">
+
+📌 Project Outcome
+Developed an end-to-end interactive Power BI dashboard that transforms raw mobile sales data into actionable business insights. 
+The dashboard helps stakeholders monitor sales performance, customer behavior, and market trends through intuitive visualizations and dynamic filtering.
+
+👨‍💻 Author
+**Sagar Patil**
+MCA Graduate | Data Analyst
+Skills: Power BI, SQL, Python, Excel, Tableau
+
+📧 Email: sagarpatilsagar2002@gmail.com
+🔗 LinkedIn: www.linkedin.com/in/sagarpatil-data-analyst
+🔗 GitHub: https://github.com/SP5558
+Contact Number: 7498759265
+
