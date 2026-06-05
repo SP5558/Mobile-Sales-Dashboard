@@ -103,7 +103,11 @@ DIVIDE([Total Sales],[Total Quantity])
 ## 📷 Dashboard Preview
 
 ### Complete Dashboard
-https://raw.githubusercontent.com/USERNAME/REPO/main/dashboard_preview.png
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SP5558/Mobile-Sales-Dashboard/main/dashboard_preview.png" width="100%" alt="Mobile Sales Dashboard">
+</p>
+
 
 ## 🚀 Skills Demonstrated
 * Data Cleaning
