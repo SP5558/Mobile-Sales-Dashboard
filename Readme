@@ -1,13 +1,5 @@
 # 📱 Mobile Sales Dashboard – Power BI Project
 
-<p align="center">
-  <img src="dashboard_preview.png" width="100%" alt="Mobile Sales Dashboard">
-</p>
-
-<p align="center">
-Interactive Power BI Dashboard for Mobile Sales Performance Analysis
-</p>
-
 ## 📌 Project Overview
 The **Mobile Sales Dashboard** is an end-to-end Business Intelligence project built using **Power BI** to analyze mobile phone sales performance across brands, cities, payment methods, and time periods.
 The dashboard converts raw transactional data into meaningful insights through interactive visualizations, KPI tracking, and dynamic filtering to support data-driven decision-making.
@@ -111,9 +103,7 @@ DIVIDE([Total Sales],[Total Quantity])
 ## 📷 Dashboard Preview
 
 ### Complete Dashboard
-<p align="center">
-<img src="dashboard_preview.png" width="100%">
-</p>
+https://raw.githubusercontent.com/USERNAME/REPO/main/dashboard_preview.png
 
 ## 🚀 Skills Demonstrated
 * Data Cleaning
