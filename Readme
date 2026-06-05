@@ -1,56 +1,57 @@
 # 📱 Mobile Sales Dashboard – Power BI Project
 
-![Mobile Sales Dashboard](dashboard_preview.png)
-## 📌 Project Overview
-The **Mobile Sales Dashboard** is an interactive Power BI project developed to analyze mobile phone sales performance across brands, cities, payment methods, and time periods.
-This dashboard transforms raw sales data into meaningful business insights through dynamic visualizations, KPI tracking, and interactive filtering, helping stakeholders make data-driven decisions.
+<p align="center">
+  <img src="dashboard_preview.png" width="100%" alt="Mobile Sales Dashboard">
+</p>
 
-## 🎯 Objectives
-- Analyze overall mobile sales performance
-- Track monthly and daily sales trends
-- Compare sales across mobile brands
-- Evaluate customer rating distribution
-- Understand customer payment preferences
-- Identify top-performing cities and regions
+<p align="center">
+Interactive Power BI Dashboard for Mobile Sales Performance Analysis
+</p>
+
+## 📌 Project Overview
+The **Mobile Sales Dashboard** is an end-to-end Business Intelligence project built using **Power BI** to analyze mobile phone sales performance across brands, cities, payment methods, and time periods.
+The dashboard converts raw transactional data into meaningful insights through interactive visualizations, KPI tracking, and dynamic filtering to support data-driven decision-making.
+
+## 🎯 Project Objectives
+* Analyze overall mobile sales performance
+* Track sales trends across months and weekdays
+* Compare sales performance among mobile brands
+* Understand customer purchasing behavior
+* Evaluate customer rating distribution
+* Identify high-performing locations and models
 
 ## 🛠️ Tools & Technologies
-- **Power BI Desktop**
-- **Power Query**
-- **DAX (Data Analysis Expressions)**
-- **Data Modeling**
-- **Microsoft Excel (Data Source)**
+| Tool             | Purpose                        |
+| ---------------- | ------------------------------ |
+| Power BI Desktop | Dashboard Development          |
+| Power Query      | Data Cleaning & Transformation |
+| DAX              | KPI Calculations               |
+| Excel            | Data Source                    |
+| Data Modeling    | Relationship Building          |
 
-## 📊 Dashboard Features
+## 📂 Dataset Information
+The dataset contains:
+  * Transaction ID
+  * Mobile Brand
+  * Mobile Model
+  * Sales Amount
+  * Quantity Sold
+  * Customer Rating
+  * Payment Method
+  * Transaction Date
+  * City / Location
 
-### 🔹 KPI Metrics
-✔ Total Sales  
-✔ Total Quantity Sold  
-✔ Total Transactions  
-✔ Average Price  
+## ⚙️ Data Preparation Process
 
-### 🔹 Interactive Filters
-- Brand
-- Mobile Model
-- Payment Method
-- Month Selection
-- Clear All Filters
+### Data Cleaning
+✔ Removed missing values
+✔ Corrected data types
+✔ Removed duplicates
 
-### 🔹 Visualizations
-- Transaction Analysis by Payment Method (Pie Chart)
-- Quantity Distribution by City (Map)
-- Sales by Mobile Model (Bar Chart)
-- Customer Rating Distribution (Funnel Chart)
-- Sales Trend by Day (Line Chart)
-- Quantity Trend by Month (Line Chart)
-- Brand-wise Sales & Transactions Table---
-
-## 📈 Key Insights
-- Generated insights from **₹769M+ Total Sales**
-- Identified top-performing mobile models
-- Evaluated customer satisfaction trends
-- Compared payment method preferences
-- Tracked monthly and weekday sales performance
-- Analyzed city-wise demand distribution
+### Data Transformation
+✔ Created calculated columns
+✔ Built data relationships
+✔ Created DAX measures
 
 ## 🧮 DAX Measures
 
@@ -65,35 +66,83 @@ Total Transactions =
 COUNT(Sales[Transaction_ID])
 
 Average Price =
-DIVIDE([Total Sales], [Total Quantity])
+DIVIDE([Total Sales],[Total Quantity])
+```
 
-## 🗂️ Data Model
-The dashboard follows a structured data model connecting:
-- Sales Data
-- Product Information
-- Customer Ratings
-- Payment Details
-- Geographic Data
+## 📊 Dashboard Features
 
-## 🚀 Skills Demonstrated
-- Data Cleaning & Transformation
-- Data Modeling
-- DAX Calculations
-- Dashboard Development
-- Business Intelligence
-- Data Visualization
-- Analytical Thinking
+### KPI Cards
+* 💰 Total Sales
+* 📦 Total Quantity
+* 🧾 Total Transactions
+* 📈 Average Price
+
+### Interactive Filters
+* Brand
+* Mobile Model
+* Payment Method
+* Month Selection
+* Reset Filters
+
+### Visualizations
+* Pie Chart → Payment Method Analysis
+* Map → Quantity by City
+* Bar Chart → Sales by Mobile Model
+* Funnel Chart → Customer Ratings
+* Line Chart → Sales by Day
+* Trend Chart → Quantity by Month
+* Table → Brand Performance
+
+## 📈 Key Insights
+* Generated insights from **₹769M+ Total Sales**
+* Identified top-performing mobile models
+* Evaluated customer satisfaction trends
+* Compared payment method usage
+* Monitored weekday and monthly sales performance
+* Analyzed city-wise product demand
+
+## 🔍 Business Questions Answered
+* Which brand generated the highest sales?
+* Which payment method is most preferred?
+* Which city sold the highest quantity?
+* Which month performed best?
+* How do customer ratings impact sales?
 
 ## 📷 Dashboard Preview
-<img width="100%" src="dashboard_preview.png" alt="Mobile Sales Dashboard">
+
+### Complete Dashboard
+<p align="center">
+<img src="dashboard_preview.png" width="100%">
+</p>
+
+## 🚀 Skills Demonstrated
+* Data Cleaning
+* Power Query
+* Data Modeling
+* DAX
+* Dashboard Development
+* Business Intelligence
+* Data Visualization
+* Analytical Thinking
+
+## 📁 Repository Structure
+```bash
+Mobile-Sales-Dashboard/
+│
+├── Dashboard.pbix
+├── dataset.xlsx
+├── dashboard_preview.png
+├── README.md
+└── screenshots/
 
 ## 📌 Project Outcome
-Developed an end-to-end **interactive Power BI dashboard** that converts raw mobile sales data into actionable insights and enables business users to monitor sales performance, customer behavior, and market trends.
+Developed a complete interactive **Power BI Sales Dashboard** that transforms raw sales data into actionable business insights and enables business users to monitor performance effectively.
 
 ## 👨‍💻 Author
-**Sagar Patil**  
-MCA Graduate | Data Analyst  
-
-📧 Email: sagarpatilsagar2002@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/sagarpatil-data-analyst  
+### Sagar Patil
+MCA Graduate | Data Analyst
+📧 Email: [sagarpatilsagar2002@gmail.com](mailto:sagarpatilsagar2002@gmail.com)
+🔗 LinkedIn: https://www.linkedin.com/in/sagarpatil-data-analyst
 🔗 GitHub: https://github.com/SP5558
+
+⭐ If you like this project, consider giving it a star.
