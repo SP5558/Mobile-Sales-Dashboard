@@ -1,142 +1,172 @@
-# 📱 Mobile Sales Dashboard – Power BI Project
+# 📱 Mobile Sales Dashboard — Power BI
+
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+
+---
 
 ## 📌 Project Overview
-The **Mobile Sales Dashboard** is an end-to-end Business Intelligence project built using **Power BI** to analyze mobile phone sales performance across brands, cities, payment methods, and time periods.
-The dashboard converts raw transactional data into meaningful insights through interactive visualizations, KPI tracking, and dynamic filtering to support data-driven decision-making.
 
-## 🎯 Project Objectives
-* Analyze overall mobile sales performance
-* Track sales trends across months and weekdays
-* Compare sales performance among mobile brands
-* Understand customer purchasing behavior
-* Evaluate customer rating distribution
-* Identify high-performing locations and models
+The **Mobile Sales Dashboard** is an interactive Power BI project designed to analyze mobile phone sales performance across different brands, cities, payment methods, and time periods.
+
+It transforms raw sales data into actionable business insights through dynamic visualizations, KPIs, and filtering capabilities — enabling fast, data-driven decision-making.
+
+---
+
+## 🖥️ Dashboard Preview
+
+![Mobile Sales Dashboard](dashboard_preview.png)
+
+---
+
+## 🎯 Objectives
+
+- 📊 Analyze overall mobile sales performance
+- 📅 Track sales trends across months and weekdays
+- 🏷️ Compare sales among different mobile brands
+- ⭐ Evaluate customer rating distribution
+- 💳 Understand payment method preferences
+- 🗺️ Identify top-performing cities and regions
+
+---
 
 ## 🛠️ Tools & Technologies
-| Tool             | Purpose                        |
-| ---------------- | ------------------------------ |
-| Power BI Desktop | Dashboard Development          |
-| Power Query      | Data Cleaning & Transformation |
-| DAX              | KPI Calculations               |
-| Excel            | Data Source                    |
-| Data Modeling    | Relationship Building          |
 
-## 📂 Dataset Information
-The dataset contains:
-  * Transaction ID
-  * Mobile Brand
-  * Mobile Model
-  * Sales Amount
-  * Quantity Sold
-  * Customer Rating
-  * Payment Method
-  * Transaction Date
-  * City / Location
+| Tool | Purpose |
+|------|---------|
+| **Power BI Desktop** | Dashboard development & visualization |
+| **Power Query** | Data cleaning & transformation |
+| **DAX** | Custom measures & calculations |
+| **Data Modeling** | Relational data structure |
+| **Microsoft Excel** | Data source |
 
-## ⚙️ Data Preparation Process
-
-### Data Cleaning
-✔ Removed missing values
-✔ Corrected data types
-✔ Removed duplicates
-
-### Data Transformation
-✔ Created calculated columns
-✔ Built data relationships
-✔ Created DAX measures
-
-## 🧮 DAX Measures
-
-```DAX
-Total Sales =
-SUM(Sales[Total_Sales])
-
-Total Quantity =
-SUM(Sales[Quantity])
-
-Total Transactions =
-COUNT(Sales[Transaction_ID])
-
-Average Price =
-DIVIDE([Total Sales],[Total Quantity])
-```
+---
 
 ## 📊 Dashboard Features
 
-### KPI Cards
-* 💰 Total Sales
-* 📦 Total Quantity
-* 🧾 Total Transactions
-* 📈 Average Price
+### 🔹 KPI Cards
+| Metric | Value |
+|--------|-------|
+| Total Sales | ₹769.20M |
+| Total Quantity Sold | 153.84M |
+| Total Transactions | 4K |
+| Average Price | ₹40.11K |
 
-### Interactive Filters
-* Brand
-* Mobile Model
-* Payment Method
-* Month Selection
-* Reset Filters
+### 🔹 Interactive Filters (Slicers)
+- Brand
+- Mobile Model
+- Payment Method
+- Month Selection
+- Clear All Filters Button
 
-### Visualizations
-* Pie Chart → Payment Method Analysis
-* Map → Quantity by City
-* Bar Chart → Sales by Mobile Model
-* Funnel Chart → Customer Ratings
-* Line Chart → Sales by Day
-* Trend Chart → Quantity by Month
-* Table → Brand Performance
+### 🔹 Visualizations
+- 🥧 **Pie Chart** — Total Transactions by Payment Method
+- 🗺️ **Map Visual** — Total Quantity by City
+- 📊 **Bar Chart** — Total Sales by Mobile Model
+- 🔻 **Funnel Chart** — Customer Ratings Distribution
+- 📈 **Line Chart** — Total Sales by Day Name
+- 📈 **Line Chart** — Total Quantity by Month
+- 📋 **Table** — Brand-wise Sales & Transactions
+
+---
 
 ## 📈 Key Insights
-* Generated insights from **₹769M+ Total Sales**
-* Identified top-performing mobile models
-* Evaluated customer satisfaction trends
-* Compared payment method usage
-* Monitored weekday and monthly sales performance
-* Analyzed city-wise product demand
 
-## 🔍 Business Questions Answered
-* Which brand generated the highest sales?
-* Which payment method is most preferred?
-* Which city sold the highest quantity?
-* Which month performed best?
-* How do customer ratings impact sales?
+- ✅ Analyzed **₹769M+ Total Sales** across all brands and regions
+- ✅ Identified **top-selling mobile models** (iPhone SE, OnePlus Nord, Galaxy Note 20)
+- ✅ Evaluated **customer rating trends** (Good / Average / Poor)
+- ✅ Analyzed **sales performance across cities** using map visualization
+- ✅ Compared **payment method usage** — Cash, UPI, Credit Card & Debit Card are nearly equal (~24–26% each)
+- ✅ Tracked **monthly and daily sales patterns** with line charts
 
-## 📷 Dashboard Preview
+---
 
-### Complete Dashboard
+## 🧮 DAX Measures
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/SP5558/Mobile-Sales-Dashboard/main/dashboard_preview.png" width="100%" alt="Mobile Sales Dashboard">
-</p>
+```dax
+Total Sales = SUM(Sales[Total_Sales])
 
+Total Quantity = SUM(Sales[Quantity])
+
+Total Transactions = COUNT(Sales[Transaction_ID])
+
+Average Price = DIVIDE([Total Sales], [Total Quantity])
+```
+
+---
+
+## 🗂️ Data Model
+
+The project follows a structured star schema connecting:
+
+```
+Sales Data (Fact Table)
+    ├── Product Information
+    ├── Customer Ratings
+    ├── Payment Details
+    └── Geographic Data
+```
+
+---
+
+## 🏷️ Brand-wise Performance
+
+| Brand | Total Sales | Total Transactions |
+|-------|-------------|-------------------|
+| Apple | ₹16,16,15,729.97 | 783 |
+| Samsung | ₹16,00,38,054.50 | 777 |
+| OnePlus | ₹15,37,19,438.84 | 768 |
+| Vivo | ₹15,00,78,427.83 | 766 |
+| Xiaomi | ₹14,37,53,336.83 | 743 |
+| **Total** | **₹76,92,04,987.97** | **3835** |
+
+---
 
 ## 🚀 Skills Demonstrated
-* Data Cleaning
-* Power Query
-* Data Modeling
-* DAX
-* Dashboard Development
-* Business Intelligence
-* Data Visualization
-* Analytical Thinking
 
-## 📁 Repository Structure
-```bash
-Mobile-Sales-Dashboard/
-│
-├── Dashboard.pbix
-├── dataset.xlsx
-├── dashboard_preview.png
-├── README.md
-└── screenshots/
+- ✔️ Data Cleaning & Transformation (Power Query)
+- ✔️ Data Modeling (Star Schema)
+- ✔️ DAX Calculations & Measures
+- ✔️ Dashboard Development & Design
+- ✔️ Interactive Reporting with Slicers
+- ✔️ Business Intelligence & Storytelling
+- ✔️ Data Visualization Best Practices
+- ✔️ Analytical Thinking
+
+---
+
+## 📁 Project Structure
+
+```
+📦 Mobile-Sales-Dashboard
+ ┣ 📊 MobileSalesDashboard.pbix     ← Power BI file
+ ┣ 📂 Data
+ ┃ ┗ 📄 mobile_sales_data.xlsx      ← Source data
+ ┣ 🖼️ dashboard_preview.png         ← Dashboard screenshot
+ ┗ 📖 README.md
+```
+
+---
 
 ## 📌 Project Outcome
-Developed a complete interactive **Power BI Sales Dashboard** that transforms raw sales data into actionable business insights and enables business users to monitor performance effectively.
+
+Developed an **end-to-end interactive Power BI dashboard** that transforms raw mobile sales data into actionable business insights. The dashboard helps stakeholders monitor sales performance, customer behavior, and market trends through intuitive visualizations and dynamic filtering.
+
+---
 
 ## 👨‍💻 Author
-### Sagar Patil
-MCA Graduate | Data Analyst
-📧 Email: [sagarpatilsagar2002@gmail.com](mailto:sagarpatilsagar2002@gmail.com)
-🔗 LinkedIn: https://www.linkedin.com/in/sagarpatil-data-analyst
-🔗 GitHub: https://github.com/SP5558
 
-⭐ If you like this project, consider giving it a star.
+**Sagar Patil**  
+*MCA Graduate | Data Analyst*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sagarpatil-data-analyst)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SP5558)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sagarpatilsagar2002@gmail.com)
+
+> 💼 **Skills:** Power BI | SQL | Python | Excel | Tableau
+
+---
+
+⭐ *If you found this project helpful, please consider giving it a star!*
